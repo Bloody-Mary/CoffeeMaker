@@ -15,11 +15,11 @@ public class CoffeeMaker {
         System.out.println();
         System.out.println("Write action (buy, fill, take, remaining, exit): ");
         while (coffeeCondition != CoffeeCondition.EXIT) {
-            run(scanner.nextLine());
+            runCoffeeMaker(scanner.nextLine());
         }
     }
 
-    public static void run(String condition) {
+    public static void runCoffeeMaker(String condition) {
         switch (condition) {
             case "buy" -> coffeeCondition = CoffeeCondition.BUY;
             case "fill" -> coffeeCondition = CoffeeCondition.FILL;
