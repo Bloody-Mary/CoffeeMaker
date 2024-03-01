@@ -12,6 +12,11 @@ public class CoffeeMaker {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        System.out.println();
+        System.out.println("Write action (buy, fill, take, remaining, exit): ");
+        while (coffeeCondition != CoffeeCondition.EXIT) {
+            run(scanner.nextLine());
+        }
     }
 
     public static void run(String condition) {
